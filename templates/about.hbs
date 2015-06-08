@@ -10,3 +10,14 @@ Pork chop andouille hamburger, pork loin pork prosciutto chuck frankfurter strip
 
 Jowl tongue corned beef, salami turkey fatback rump ham hock. Short ribs tri-tip turducken, corned beef kevin pork belly swine tongue jowl chuck shoulder landjaeger tail. Chuck doner strip steak bacon, pork belly ham porchetta t-bone hamburger capicola tongue meatball. Pork chop jerky cow, pastrami t-bone prosciutto chuck frankfurter filet mignon. Tail turducken flank bresaola jowl biltong ground round.
 </p>
+
+<button class='btn btn-info' {{action 'annoyingAlert'}}>Cliky Clicky</button>
+
+{{#if isPictureShowing}}
+  <button class='btn btn-danger' {{action 'hidePicture'}}>Go Away!</button>
+  <p>
+    <img src="http://img2.wikia.nocookie.net/__cb20140818171429/moviedatabase/images/0/0c/Frankenstein_Monster_-_Young_Frankenstein_003.jpg" alt="Young Frankenstein" />
+  </p>
+{{else}}
+  <button class="btn btn-primary" {{action 'showPicture'}}>Boo!</button>
+{{/if}}

@@ -5,6 +5,12 @@
       <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
       <li>{{#link-to 'email'}}Email{{/link-to}}</li>
     </ul>
+    {{#if messageSent}}
+      <p>Thanks, yo message sent. Confirmation: {{confirmationNumber}}.</p>
+    {{else}}
+      <p><a href='#' {{action 'secretMessage'}}>Click here</a> to send a secret message.</p>
+    {{/if}}
+
   </div>
   <div class='col-md-6'>
     {{outlet}}
